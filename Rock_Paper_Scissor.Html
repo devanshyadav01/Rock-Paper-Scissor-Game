@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock-Paper-Scissor</title>
+</head>
+<body>
+    <h1>Rock-Paper-Scissor</h1>
+   
+   
+   <button onclick="
+    const number = Math.random();
+    let computerMove = '';
+        if (number>=0 && number < 0.3){
+       computerMove ='rock';
+    } else if(number>= 0.3 && number<= 0.6){
+       computerMove ='paper';
+    }else{
+       computerMove ='Scissor';
+    }
+    let result = '';
+    if (computerMove === 'rock'){
+        result = 'Tie';
+    }else if(computerMove === 'paper'){
+        result = 'Lose';
+    }else if(computerMove === 'Scissor'){
+        result = 'Victory';
+    }
+    alert(`Your move is Rock. Computer mover is ${computerMove}. You ${result}.`);
+    "
+    >Rock</button>
+
+
+
+    <button onclick="
+    number = Math.random();
+    computerMove = '';
+       if (number>=0 && number < 0.3){
+       computerMove ='rock';
+    } else if(number>= 0.3 && number<= 0.6){
+       computerMove ='paper';
+    }else{
+       computerMove ='Scissor';
+    }
+    result = '';
+    if (computerMove === 'paper'){
+        result = 'Tie';
+    }else if(computerMove === 'Scissor'){
+        result = 'Lose';
+    }else if (computerMove === 'rock'){
+        result = 'Victory';
+    }
+    alert(`Your move is Paper. Computer mover is ${computerMove}. You ${result}.`);
+    ">Paper</button>
+
+
+
+    <button onclick="
+    number = Math.random();
+    computerMove = '';
+    if (number>=0 && number < 0.3){
+    computerMove ='rock';
+ } else if(number>= 0.3 && number<= 0.6){
+    computerMove ='paper';
+ }else{
+    computerMove ='Scissor';
+ }
+ result = '';
+ if (computerMove === 'Scissor'){
+     result = 'Tie';
+ }else if(computerMove === 'rock'){
+     result = 'Lose';
+ }else if (computerMove === 'paper'){
+     result = 'Victory';
+ }
+ alert(`Your move is Scissor. Computer mover is ${computerMove}. You ${result}.`);
+ ">Scissor</button>
+
+
+    <script>
+   
+     
+     
+    </script>
+</body>
+</html>
